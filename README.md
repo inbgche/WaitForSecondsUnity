@@ -4,7 +4,7 @@ Unity WaitForSeconds wrapper Class to avoid GC call.
 This kind of code makes food for C# Garbage Collector at every calling time.
 
 ```C#
-yield return new WaitForSeconds(1.f); 
+    yield return new WaitForSeconds(1.f); 
 ```
 
 But, you can avoid that problem if you cache and reuse it.
