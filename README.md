@@ -19,4 +19,9 @@ But, you can avoid that problem if you cache and reuse it.
     yield return StartCoroutine(WaitFor.Seconds(3.0f, DoSomething()));
 ```
 
+## FixedUpdate and EndofFrame ##
 
+```C#
+    yield return WaitFor.FixedUpdate;
+    yield return WaitFor.EndOfFrame;
+```
